@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="BGimage">
+    <div class="Start_page">
+<span>Player-1 Name:</span><input type="text" id="p1" value="" maxlength="10"><br>
+<span>Player-2 Name:</span><input type="text" id="p2" value="" maxlength="10"><br>
+<button onclick="start_game_with_name()" type="submit" class="b1">Start Game</button><br><br><button type="button" onclick="start_game_without_name()">Start withuot Name</button>
+    </div>
+</div>
+<div class="game">   
+    <div class="score">
+        <div id="player1"> X:<span id="p1-score"> 0 </span></div>
+        <div id="player2"> O:<span id="p2-score"> 0 </span></div>
+    </div>
+    <div class="states"><h1 id="winner"></h1></div>
+    <table class="container">
+        <tr class="row">
+            <td class="box" id="0"></td>
+            <td class="box" id="1"></td>
+            <td class="box" id="2"></td>
+        </tr>
+        <tr class="row">
+            <td class="box" id="3"></td>
+            <td class="box" id="4"></td>
+            <td class="box" id="5"></td>
+        </tr>
+        <tr class="row">
+            <td class="box" id="6"></td>
+            <td class="box" id="7"></td>
+            <td class="box" id="8"></td>
+        </tr>
+    </table>
+    <div class="button">
+        <input id="Restart" type="button" value="Restart" onclick="restart()">
+        <input id="Reset" type="button" value="Reset" onclick="reset()">
+    </div>
+</div> 
+
+    <script src="index.js"> </script>
+</body>
+</html>
